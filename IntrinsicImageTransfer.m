@@ -1,4 +1,4 @@
-function [T, M0] = IntrinsicImageTransfer(S,C,C1,param)
+function [T, M0] = IntrinsicImageTransfer(S,C,param)
 
     %% Step1: Image to Vectors
     [X_s, P]                =  ImageToVector(S,param);
@@ -23,7 +23,7 @@ function [T, M0] = IntrinsicImageTransfer(S,C,C1,param)
     beta                    = param.beta;
     gamma                   = param.gamma;
     Y                       = SolveLLE_Embedding(X_c, X_s, W, M, alpha, beta, gamma);
-    T                       = VectorToImage(Y, S, C1, param);
+    T                       = VectorToImage(Y, S, S, param);
     T                       = max(min(T,1),0);
 
 end
