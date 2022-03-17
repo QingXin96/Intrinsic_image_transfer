@@ -34,13 +34,6 @@ This paper presents a novel intrinsic image transfer (IIT) algorithm for image i
 </pre>
 </p>
 
-<figure>
-<img src="./imgs/swan_src.png" alt="Trulli" style="width:30%">
-<figcaption align = "center"><b>input</b></figcaption>
-  
-<img src="./imgs/swan_src.png" alt="Trulli" style="width:30%">
-<figcaption align = "center"><b>input</b></figcaption>
-</figure>
 
 2. Photorealistic style transfer
 
@@ -50,7 +43,6 @@ This paper presents a novel intrinsic image transfer (IIT) algorithm for image i
   <img src='./imgs/exemplar2.png' width="220px">
   <img src='./imgs/style2.png' width="100px">
 </p>
-
 
 
 <p align='center'>
@@ -69,7 +61,7 @@ This paper presents a novel intrinsic image transfer (IIT) algorithm for image i
 
 <p align='center'>
 <pre>
-                       (a) Input              (b) Ours               (c) Exemplar         (d) Reference style
+                       (a) Input                 (b) Ours                 (c) Exemplar             (d) Reference style
 </pre>
 </p>
 
