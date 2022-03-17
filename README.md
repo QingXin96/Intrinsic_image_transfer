@@ -31,8 +31,11 @@ This paper presents a novel intrinsic image transfer (IIT) algorithm for image i
 </p>
 
 <figure>
-<img src="./imgs/swan_src.png" alt="Trulli" style="width:100%">
-<figcaption align = "center"><b>Fig.1 - 4K Mountains Wallpaper</b></figcaption>
+<img src="./imgs/swan_src.png" alt="Trulli" style="width:30%">
+<figcaption align = "center"><b>input</b></figcaption>
+  
+<img src="./imgs/swan_src.png" alt="Trulli" style="width:30%">
+<figcaption align = "center"><b>input</b></figcaption>
 </figure>
 
 2. Photorealistic style transfer
