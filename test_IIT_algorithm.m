@@ -2,8 +2,8 @@ clc
 clear
 close all
 
-S                     = im2double(imread(['swan_src.png']));
-C                     = im2double(imread(['swan_clahe.png']));
+S                     = im2double(imread(['./imgs/swan_src.png']));
+C                     = im2double(imread(['./imgs/swan_clahe.png']));
 S                     = max(0,min(1,S));
 C                     = max(0,min(1,C));
 figure, imshow([S, C])
