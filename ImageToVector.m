@@ -4,8 +4,9 @@ function [X,P,T]=ImageToVector(I,param)
     color_space          = param.color_space;
     logarithm            = param.logarithm; 
     scale                = param.scale; 
+    bias                 = param.bias;
     
-    [rows,cols,layers]=size(I);
+    [rows, cols, layers] = size(I);
     Px             	     = repmat([1:rows]',1,cols);
     Py             	     = repmat([1:cols], rows,1); 
     P                    = [Px(:),Py(:)];
@@ -18,7 +19,7 @@ function [X,P,T]=ImageToVector(I,param)
         else
             if (logarithm)
                 v(v==0)  = eps;
-                v        = -log(scale*v);
+                v        = -log(bias+scale*v);
             end
             X            = reshape(v,[rows*cols,1]);
         end
@@ -30,7 +31,7 @@ function [X,P,T]=ImageToVector(I,param)
         else
             if (logarithm)
                 L(L==0)  = eps;
-                L        = -log(scale*L);
+                L        = -log(bias+scale*L);
             end
             X            = reshape(L,[rows*cols,1]);
         end
@@ -42,14 +43,14 @@ function [X,P,T]=ImageToVector(I,param)
         else
             if (logarithm)
                 L(L==0)  = eps;
-                L        = -log(scale*L);
+                L        = -log(bias+scale*L);
             end
             X            = reshape(L,[rows*cols,1]);
         end
     else
         if (logarithm)
             I(I==0)      = eps;
-            I            = -log(scale*I);
+            I            = -log(bias+scale*I);
         end
         X_g              = reshape(I,[rows*cols,layers]);
         X                = X_g;
