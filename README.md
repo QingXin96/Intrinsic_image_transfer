@@ -25,9 +25,9 @@ This paper presents a novel intrinsic image transfer (IIT) algorithm for image i
 <p align='center'>
   <figure>
     <img src='./imgs/swan_src.png' alt=".." title="Optional title" width="250px"/>
+    <img src='./imgs/swan_clahe.png' width="250px">
+    <img src='./imgs/swan_ours.png' width="250px">
   </figure>
-  <img src='./imgs/swan_clahe.png' width="250px">
-  <img src='./imgs/swan_ours.png' width="250px">
 </p>
 
 2. Photorealistic style transfer
