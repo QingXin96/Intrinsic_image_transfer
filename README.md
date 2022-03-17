@@ -22,9 +22,9 @@ This paper presents a novel intrinsic image transfer (IIT) algorithm for image i
 ## Examples
 1. Image tone mapping
 <p align='center'>
-  <img src='swan_src.png' width="250px">
-  <img src='swan_clahe.png' width="250px">
+  <img src='./imgs/swan_src.png' width="250px">
   <img src='./imgs/swan_clahe.png' width="250px">
+  <img src='./imgs/swan_ours.png' width="250px">
 </p>
 
 2. Photorealistic style transfer
