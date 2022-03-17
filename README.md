@@ -6,7 +6,7 @@ This repository is the implementation  (in Matlab) for the paper
 
 <br>
 [Junqing Huang],
-[Michael Ruzhansky]
+[Michael Ruzhansky,
 [Qianying Zhang],
 [Haihui Wang],
 <br>
