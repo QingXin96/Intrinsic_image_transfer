@@ -12,14 +12,15 @@ This repository is the implementation  (in Matlab) for the paper
 [Haihui Wang],
 <br>
 
-
+<br>
 [**Abstract:**]
+<br>
 
 This paper presents a novel intrinsic image transfer (IIT) algorithm for image illumination manipulation, which creates a local image translation between two illumination surfaces. We also demonstrate its versatility and benefits to several illumination-related tasks: illumination compensation, image enhancement and tone mapping, and high dynamic range (HDR) image compression, and show their high-quality results on natural image datasets.
-  
 
 
 ## Examples
+
 1. Image tone mapping
 <p align='center'>
   <img src='./imgs/swan_src.png' width="250px">
