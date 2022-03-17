@@ -30,9 +30,9 @@ This paper presents a novel intrinsic image transfer (IIT) algorithm for image i
   </figure>
 </p>
 
-<p align = "center">
-(a) Input   (b) Exemplar  (c) Ours
-</p>
+<pre>
+           (a) Input                                    (b) Exemplar                                      (c) Ours
+</pre>
 
 <figure>
 <img src="./imgs/swan_src.png" alt="Trulli" style="width:30%">
