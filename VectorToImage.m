@@ -1,5 +1,6 @@
 function I = VectorToImage(Y,S,C,param)
 
+    bias                = param.bias;
     scale               = param.scale;
     color_space         = param.color_space;
     logarithm           = param.logarithm;
@@ -19,7 +20,7 @@ function I = VectorToImage(Y,S,C,param)
         else
             v           = Y;
             if (logarithm)
-                v       = min(1,max(0,(exp(-v)/scale)));
+                v       = min(1,max(0,((exp(-v)-bias)/scale)));
             end
             hsv_S(:,:,3)= reshape(v,[rows,cols, 1]);
         end
@@ -35,7 +36,7 @@ function I = VectorToImage(Y,S,C,param)
         else
             L           = Y;
             if (logarithm)
-                L       = min(1,max(0,exp(-L)/scale));
+                L       = min(1,max(0,(exp(-L)-bias)/scale));
             end
             lab_S(:,:,1)    = reshape(100*L,[rows,cols, 1]);
         end
@@ -51,14 +52,14 @@ function I = VectorToImage(Y,S,C,param)
         else
             L           = Y;
             if (logarithm)
-                L       = min(1,max(0,exp(-L)/scale));
+                L       = min(1,max(0,(exp(-L)-bias)/scale));
             end
             Ycbcr_S(:,:,1)    = reshape(L,[rows,cols, 1]);
         end
         I               = ycbcr2rgb(Ycbcr_S);
     else
         if (logarithm)
-            Y           = min(1,max(0,(exp(-Y)/scale)));
+            Y           = min(1,max(0,((exp(-Y)-bias)/scale)));
         end
         I = reshape(Y,[rows,cols,layers]);
     end
