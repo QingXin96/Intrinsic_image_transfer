@@ -22,14 +22,14 @@ This paper presents a novel intrinsic image transfer (IIT) algorithm for image i
 
 1. Image tone mapping
 <p align='center'>
-    <img src='./imgs/swan_src.png' width="250px"/>
-    <img src='./imgs/swan_clahe.png' width="250px">
-    <img src='./imgs/swan_ours.png' width="250px">
+    <img src='./imgs/swan_src.png' width="255px"/>
+    <img src='./imgs/swan_clahe.png' width="255px">
+    <img src='./imgs/swan_ours.png' width="255px">
 </p>
 
 <p align='center'>
 <pre>
-                (a) Input                      (b) Exemplar                   (c) Ours
+                   (a) Input                        (b) Exemplar                     (c) Ours
 </pre>
 </p>
 
