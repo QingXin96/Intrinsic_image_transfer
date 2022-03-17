@@ -60,7 +60,7 @@ This paper presents a novel intrinsic image transfer (IIT) algorithm for image i
 
 <p align='center'>
 <pre>
-                     (a) Input                  (b) Ours                  (c) Exemplar           (d) Reference style
+                     (a) Input                  (b) Ours                  (c) Exemplar         (d) Reference style
 </pre>
 </p>
 
