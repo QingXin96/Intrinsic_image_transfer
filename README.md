@@ -30,7 +30,7 @@ This paper presents a novel intrinsic image transfer (IIT) algorithm for image i
 
 <p align='center'>
 <pre>
-(a) Input                      (b) Exemplar                   (c) Ours
+                (a) Input                      (b) Exemplar                   (c) Ours
 </pre>
 </p>
 
@@ -51,6 +51,8 @@ This paper presents a novel intrinsic image transfer (IIT) algorithm for image i
   <img src='./imgs/style2.png' width="100px">
 </p>
 
+
+
 <p align='center'>
   <img src='./imgs/content3.png' width="220px">
   <img src='./imgs/ours3.png' width="220px">
@@ -65,6 +67,11 @@ This paper presents a novel intrinsic image transfer (IIT) algorithm for image i
   <img src='./imgs/style1.png' width="100px">
 </p>
 
+<p align='center'>
+<pre>
+                (a) Input            (b) Ours             (c) Exemplar       (d) Reference style
+</pre>
+</p>
 
 If you have any questions or suggestions about the paper, feel free to reach me (Junqing.Huang@UGent.be).
 
