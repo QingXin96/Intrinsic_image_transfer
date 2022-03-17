@@ -33,7 +33,7 @@ This paper presents a novel intrinsic image transfer (IIT) algorithm for image i
   <img src='./imgs/content2.png' width="220px">
   <img src='./imgs/ours2.png' width="220px">
   <img src='./imgs/exemplar2.png' width="220px">
-  <img src='./imgs/style2.png' width="120px">
+  <img src='./imgs/style2.png' width="100px">
 </p>
 
 <p align='center'>
