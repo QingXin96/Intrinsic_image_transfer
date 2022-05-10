@@ -1,6 +1,6 @@
 # Intrinsic Image Transfer
 
-This repository is the implementation  (in Matlab) for the paper:
+This repository is a (Matlab) implementation  (in  for the paper:
 
 [**Intrinsic Image Transfer for Illumination Manipulation**](https://arxiv.org/abs/2107.00704).
 
