@@ -4,7 +4,7 @@ This repository is the implementation  (in Matlab) for the paper:
 
 [**Intrinsic Image Transfer for Illumination Manipulation**](https://arxiv.org/abs/2107.00704).
 
-Junqing Huang(Junqing.Huang@UGent.be), 
+[Junqing Huang], 
 [Michael Ruzhansky,
 [Qianying Zhang],
 [Haihui Wang],
