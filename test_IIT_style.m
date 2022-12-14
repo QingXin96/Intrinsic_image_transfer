@@ -11,30 +11,30 @@ C                     = max(0,min(1,C));
 E                     = max(0,min(1,E));
 
 %% Intrinsic image transfer
-para.logarithm          =  1;
+para.logarithm          =  0;
 para.color_transfer     =  0;
-para.bias               =  1e-3;
+para.bias               =  1/255; % for 8 bit image in case of using logarithm
 para.scale              =  1.0;
 para.color_space        =  'rgb'; 
 para.color_exemplar     =  'original';
 
 % parameters for Gauss/Bilateral filter
-para.filter.k1            =  49;   
+para.filter.k1          =  49;   
 para.filter.delta_s     =  2.0;
 para.filter.delta_r     =  0.2;
 para.filter.mode        =  'gf';
 
 % parameters for LLE encoding
-para.LLE.tol            =  2e-3; 
+para.LLE.tol            =  1e-5; 
 para.LLE.k2             =  49; 
 
 % Global parameters
 para.alpha              =  1.0;
 para.beta               =  1000;
-para.gamma           =  0; % not use in style transfer
+para.gamma              =  0; % not use in style transfer
 
-[T, M]                      =  IntrinsicImageTransfer(S,C,para);
-T                             = max(0,min(1,T));
+[T, M]                  =  IntrinsicImageTransfer(S,C,para);
+T                       = max(0,min(1,T));
 
 figure,
 subplot(221), imshow(S), title('Content')
