@@ -18,7 +18,7 @@ function [X,P,T]=ImageToVector(I,param)
             X            = reshape(hsv_I(:,:,1:2),[rows*cols,2]);
         else
             if (logarithm)
-                v(v==0)  = eps;
+               %v(v==0)  = eps;
                 v        = -log(bias+scale*v);
             end
             X            = reshape(v,[rows*cols,1]);
@@ -30,7 +30,7 @@ function [X,P,T]=ImageToVector(I,param)
             X            = reshape(Lab_I(:,2:3),[rows*cols,2]);
         else
             if (logarithm)
-                L(L==0)  = eps;
+               %L(L==0)  = eps;
                 L        = -log(bias+scale*L);
             end
             X            = reshape(L,[rows*cols,1]);
@@ -42,14 +42,14 @@ function [X,P,T]=ImageToVector(I,param)
             X            = reshape(Ycbcr_I(:,2:3),[rows*cols,2]);
         else
             if (logarithm)
-                L(L==0)  = eps;
+               %L(L==0)  = eps;
                 L        = -log(bias+scale*L);
             end
             X            = reshape(L,[rows*cols,1]);
         end
     else
         if (logarithm)
-            I(I==0)      = eps;
+           %I(I==0)      = eps;
             I            = -log(bias+scale*I);
         end
         X_g              = reshape(I,[rows*cols,layers]);
