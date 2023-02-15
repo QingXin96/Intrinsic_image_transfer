@@ -1,8 +1,8 @@
 # Intrinsic Image Transfer
 
-This repository is a (Matlab) implementation of the paper:
+This repository is a (Matlab) implementation of the IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI) paper:
 
-[**Intrinsic Image Transfer for Illumination Manipulation**](https://arxiv.org/abs/2107.00704).
+[**Intrinsic Image Transfer for Illumination Manipulation**](https://ieeexplore.ieee.org/document/9961945).
 
 [Junqing Huang], 
 [Michael Ruzhansky,
