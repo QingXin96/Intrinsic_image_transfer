@@ -66,6 +66,6 @@ This paper presents a novel intrinsic image transfer (IIT) algorithm for image i
 </pre>
 </p>
 
-If you have any questions or suggestions about the paper, feel free to reach me (Junqing.Huang@UGent.be).
+If you have any questions or suggestions, feel free to reach me (Junqing.Huang@UGent.be).
 
 More details will be uploaded later!
