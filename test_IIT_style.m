@@ -11,7 +11,7 @@ C                     = max(0,min(1,C));
 E                     = max(0,min(1,E));
 
 %% Intrinsic image transfer
-para.logarithm          =  0;
+para.logarithm          =  1;
 para.color_transfer     =  0;
 para.bias               =  1/255; % for 8 bit image in case of using logarithm
 para.scale              =  1.0;
