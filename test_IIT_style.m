@@ -25,7 +25,7 @@ para.filter.delta_r     =  0.2;
 para.filter.mode        =  'gf';
 
 % parameters for LLE encoding
-para.LLE.tol            =  1e-5; 
+para.LLE.tol            =  1e-3; 
 para.LLE.k2             =  49; 
 
 % Global parameters
