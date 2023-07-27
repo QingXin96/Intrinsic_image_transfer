@@ -2,13 +2,14 @@ clc
 clear
 close all
 
-%%  
-S                    = im2double(imread(['content.png']));
-C                    = im2double(imread(['exemplar.png']));
+%%  load data
+S                    = im2double(imread(['./imgs/content1.png']));
+C                    = im2double(imread(['./imgs/exemplar1.png']));
 
 S                    = max(0,min(1,S));
 C                    = max(0,min(1,C));
 
+[rows, cols, layers] = size(S);
 Px             	     = repmat([1:rows]',1,cols);
 Py             	     = repmat([1:cols], rows,1); 
 P                    = [Px(:),Py(:)];
@@ -53,6 +54,7 @@ W1                   = sparse(ccidx(:),nnidx(:),w(:),N,N);
 U                    = W1'*W1;
 
 %% Step2: computing LLE encoding weight matrix
+fprintf(2,'Step2: computing LLE encoding weight matrix.\n');
 
 neighborhood        = nnidx(:,2:K);
 currentindex        = repmat(nnidx(:,1),1,K-1);
@@ -74,6 +76,7 @@ M   = (I-W2);
 V   =  M'*M;
 
 %% Step3: Solve Equation A*x = b
+fprintf(2,'Step3: Solve Equation A*x = b.\n');
 alpha               =  1.0; 
 beta                =  1000;
 gamma               =  0.0;
@@ -81,4 +84,5 @@ A =  alpha*U+beta*V+gamma*sparse(1:N,1:N,1);
 b =  alpha*U*Y+gamma*X;
 Z =  A\b;
 
+R =  reshape(min(max(0,Z),1),[rows,cols,layers]);
 figure, imshow([S, C, R])
